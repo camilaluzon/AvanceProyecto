@@ -43,7 +43,11 @@ public class Mascota {
         return disponible;
     }
 
-    public void mostrarCatalogo(){
-        
+    public void mostrarPerfil(){
+        System.out.println("Nombre: "+getNombre());
+        System.out.println("Especie: "+getEspecie());
+        System.out.println("Tamaño: "+getSize());
+        System.out.println("Edad: "+getEdad());
+        System.out.println("Disponible: "+isDisponible());
     }
 }
