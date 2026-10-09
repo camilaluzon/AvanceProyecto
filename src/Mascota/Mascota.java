@@ -41,6 +41,9 @@ public class Mascota {
     public String getSize() {
         return size;
     }
+    public String getFisico(){
+        return fisico;
+    }
     public int getEdad() {
         return edad;
     }
