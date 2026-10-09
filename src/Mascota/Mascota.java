@@ -4,6 +4,7 @@ public class Mascota {
     private String nombre;
     private String especie;
     private String size;
+    private String fisico;
     private int edad;
     private boolean disponible;
 
@@ -18,6 +19,10 @@ public class Mascota {
     public void setSize(String size){
         if (size != null && !size.isBlank())
             this.size=size;
+    }
+    public void setFisico(String fisico){
+        if (fisico != null && !fisico.isBlank())
+            this.fisico=fisico;
     }
     public void setEdad(int edad){
         if (edad >= 0)
@@ -43,7 +48,11 @@ public class Mascota {
         return disponible;
     }
 
-    public void mostrarCatalogo(){
-        
+    public void mostrarPerfil(){
+        System.out.println("Nombre: "+getNombre());
+        System.out.println("Especie: "+getEspecie());
+        System.out.println("Tamaño: "+getSize());
+        System.out.println("Edad: "+getEdad());
+        System.out.println("Disponible: "+isDisponible());
     }
 }
